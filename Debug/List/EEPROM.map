@@ -1,0 +1,54 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+pass1                                                                             0x0160       2
+pass2                                                                             0x0162       2
+pass3                                                                             0x0164       2
+password                                                                          0x0166       2
+id1                                                                               0x0168       2
+id2                                                                               0x016A       2
+id3                                                                               0x016C       2
+enteredID                                                                         0x016E       2
+NewID                                                                             0x0170       2
+_base_y (alcd.lib)                                                                0x0172       4
+_lcd_x                                                                            0x0176       1
+_lcd_y                                                                            0x0177       1
+_lcd_maxx                                                                         0x0178       1
+_seed (stdlib.lib)                                                                0x0179       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+storedPassword                                                                    R4,R5        2
+OldPassword                                                                       R6,R7        2
+NewPassword                                                                       R8,R9        2
+ReenterNewPassword                                                                R10,R11      2
+ChangeAdminPasswords                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+initializeEEPROM                                                                  0x000F3     79
+main                                                                              0x00142    305
+keypad                                                                            0x00273     94
+EE_Read                                                                           0x002D1     12
+EE_Write                                                                          0x002DD     14
+ChangePasswordUser                                                                0x002EB    170
+ChangePasswordAdmin                                                               0x00395    122
+ext0                                                                              0x0040F      3
+ext1                                                                              0x00412     16
+_lcd_write_nibble_G100                                                            0x00422     21
+_lcd_write_data                                                                   0x00437     13
+lcd_gotoxy                                                                        0x00444     20
+lcd_clear                                                                         0x00458     12
+lcd_putchar                                                                       0x00464     30
+lcd_init                                                                          0x00482     44
+strlen                                                                            0x004AE     12
+strlenf                                                                           0x004BA     13
+_print_G103                                                                       0x004C7    296
+put_lcd_G103                                                                      0x005EF     14
+lcd_printf                                                                        0x005FD     39
